@@ -42,6 +42,12 @@ body {
     gap: 16px;
 }
 
+.button-row .btn {
+    min-width: 165px;
+    text-align: center;
+    white-space: nowrap;
+}
+
 .btn {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 15px;
@@ -72,7 +78,7 @@ body {
 /* ── Navbar ── */
 .main-nav {
     display: flex;
-    gap: 24px;
+    gap: 36px;
     margin-bottom: 40px;
 }
 
