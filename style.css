@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    background-color: #fdfcfa;
+    color: #000;
+    line-height: 1.6;
+}
+
+/* ── Home page ── */
+.home-body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.home-center h1 {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.button-row {
+    display: flex;
+    gap: 16px;
+}
+
+.btn {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    padding: 12px 28px;
+    border: 1px solid #000;
+    cursor: pointer;
+    display: inline-block;
+    transition: opacity 0.15s;
+}
+
+.btn:hover {
+    opacity: 0.75;
+}
+
+.btn-dark {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #000;
+}
+
+/* ── Inner pages ── */
+.page-body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 40px;
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.container h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.container p {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+/* Contact page specifics */
+.contact-label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 4px !important;
+}
+
+.contact-value {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 24px !important;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .page-body {
+        padding-top: 20px;
+    }
+
+    .container {
+        padding: 0 30px;
+        max-width: 100%;
+    }
+
+    .home-center h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .home-center {
+        padding: 0 20px;
+    }
+
+    .home-center h1 {
+        font-size: 28px;
+    }
+
+    .button-row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        text-align: center;
+    }
+}
